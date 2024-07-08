@@ -1,10 +1,14 @@
-function calculateSum (a : number, b : number ) : number {
-    return a + b;
+enum Arithmatic {
+    Add, 
+    Sub,
+    Div,
+    Mul
 }
 
-console.log(calculateSum(2,3));
 
-// function jscalculateSum (a 
-//      , b){
-//     return a+b
-// }
+function calculate(a : number , b : number , type : Arithmatic){
+    console.log(type)
+    return 1
+}
+
+const ans = calculate( 1, 2 , Arithmatic.Div)
